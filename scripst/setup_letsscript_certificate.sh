@@ -30,4 +30,4 @@ snap install --classic certbot
 ln -sf /snap/bin/certbot /usr/bin/certbot
 
 # Obtener el certificado.
-certbot --apache -m $CERTIFICATE_EMAIL --agree-tos --no-eff-email -d $CERTIFICATE_DOMAIN --non-interactive
+certbot --nginx -m $CERTIFICATE_EMAIL --agree-tos --no-eff-email -d $CERTIFICATE_DOMAIN --non-interactive
